@@ -90,12 +90,12 @@ If the driver is sleeping or disabled, the command will be ignored.
 #### Definition
 
 ```
-uint8_t DRV8825_Step (t_DRV8825 *stepper, enum e_StepDir dir);
+uint8_t DRV8825_Step (t_DRV8825 *driver, enum e_StepDir dir);
 ```
 
 #### Parameters
 
-* **`stepper`** A pointer to the structure representing the driver.
+* **`driver`** A pointer to the structure representing the driver.
 * **`dir`** The step direction.
 
 #### Returns
@@ -114,12 +114,12 @@ It will only set the connected mode pins.
 #### Definition
 
 ```
-void DRV8825_SetMode (t_DRV8825 *stepper, enum e_StepMode mode);
+void DRV8825_SetMode (t_DRV8825 *driver, enum e_StepMode mode);
 ```
 
 #### Parameters
 
-* **`stepper`** A pointer to the structure representing the driver.
+* **`driver`** A pointer to the structure representing the driver.
 * **`mode`** Stepping mode.
 
 #### Since
@@ -134,12 +134,12 @@ If the pin_enable is unconnected, the command will be ignored.
 #### Definition
 
 ```
-void DRV8825_Enable (t_DRV8825 *stepper);
+void DRV8825_Enable (t_DRV8825 *driver);
 ```
 
 #### Parameters
 
-* **`stepper`** A pointer to the structure representing the driver.
+* **`driver`** A pointer to the structure representing the driver.
 
 #### Since
 
@@ -153,12 +153,12 @@ If the pin_enable is unconnected, the command will be ignored.
 #### Definition
 
 ```
-void DRV8825_Disable (t_DRV8825 *stepper);
+void DRV8825_Disable (t_DRV8825 *driver);
 ```
 
 #### Parameters
 
-* **`stepper`** A pointer to the structure representing the driver.
+* **`driver`** A pointer to the structure representing the driver.
 
 #### Since
 
@@ -172,12 +172,12 @@ If the pin_sleep is unconnected, the command will be ignored.
 #### Definition
 
 ```
-void DRV8825_Sleep (t_DRV8825 *stepper);
+void DRV8825_Sleep (t_DRV8825 *driver);
 ```
 
 #### Parameters
 
-* **`stepper`** A pointer to the structure representing the driver.
+* **`driver`** A pointer to the structure representing the driver.
 
 #### Since
 
@@ -191,12 +191,12 @@ If the pin_enable is unconnected, the command will be ignored.
 #### Definition
 
 ```
-void DRV8825_Wake (t_DRV8825 *stepper);
+void DRV8825_Wake (t_DRV8825 *driver);
 ```
 
 #### Parameters
 
-* **`stepper`** A pointer to the structure representing the driver.
+* **`driver`** A pointer to the structure representing the driver.
 
 #### Since
 
@@ -210,12 +210,12 @@ If the pin_reset is unconnected, the command will be ignored.
 #### Definition
 
 ```
-void DRV8825_Reset (t_DRV8825 *stepper);
+void DRV8825_Reset (t_DRV8825 *driver);
 ```
 
 #### Parameters
 
-* **`stepper`** A pointer to the structure representing the driver.
+* **`driver`** A pointer to the structure representing the driver.
 
 #### Since
 
@@ -229,12 +229,12 @@ If the pin_error is unconnected, will return no error.
 #### Definition
 
 ```
-void DRV8825_HasError (t_DRV8825 *stepper);
+void DRV8825_HasError (t_DRV8825 *driver);
 ```
 
 #### Parameters
 
-* **`stepper`** A pointer to the structure representing the driver.
+* **`driver`** A pointer to the structure representing the driver.
 
 #### Returns
 
