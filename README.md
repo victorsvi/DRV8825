@@ -27,6 +27,7 @@ To interface with the DRV8825, you will need to:
 3. create a pointer variable of the type t_DRV8825;
 4. call DRV8825_New in "setup()" to initialize the driver object;
 5. call DRV8825_Step whenever the motor needs to step.
+
 You can check out this [example skecth](../master/examples/DRV8825/DRV8825.ino).
 
 ## Documentation
