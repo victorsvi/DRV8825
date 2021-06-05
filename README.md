@@ -1,5 +1,7 @@
 # DRV8825
 
+[![Arduino Compatible](https://github.com/victorsvi/DRV8825/actions/workflows/Arduino%20Compatible.yml/badge.svg)](https://github.com/victorsvi/DRV8825/actions?workflow=Arduino%20Compatible)
+
 DRV8825 Stepper Driver interface for Arduino.
 
 ### Features
